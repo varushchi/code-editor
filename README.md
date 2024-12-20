@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Code Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Демо](https://varushchi.github.io/code-editor/)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Установка
 
-## Expanding the ESLint configuration
+1. Клонируйте репозиторий:
+   ```
+   git clone https://github.com/varushchi/code-editor
+   ```
+2. Перейдите в директорию проекта:
+   ```
+   cd code-editor
+   ```
+3. Установите зависимости:
+   ```
+   npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Запуск
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Для запуска проекта используйте команду:
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+npm run dev
 ```
+(возникли сложности с react 19, поэтому использовал Vite, а тут команда не install, а run dev)
+
+## Использование
+
+Добавил выбор JS и Python, сниппеты кода для языков.
+При нажатии на кнопку Run имитируется запрос к api, и выдается статус компиляции
+
+## Моменты для улучшение
+
+- Анализ кода для вывода стоящей информации
+- Поддержки для других языков
+- Возможность Изменение темы
+- Улучшение дизайна 
+
