@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Editor from '@monaco-editor/react';
 import ChooseLang from './components/ChooseLang';
