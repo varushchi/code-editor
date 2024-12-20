@@ -1,0 +1,36 @@
+.App{
+  margin-top: 100px;
+}
+
+.editor-div{
+  width: 70%;
+  height: 50vh;
+  margin-inline: auto;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+
+  & > .output{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+  }
+}
+
+header{
+  width: 70%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,8 @@
+.ChooseLang{
+  display: inline-flex;
+  align-items: center;
+  gap: 10%;
+  & > label{
+    text-wrap: nowrap;
+  }
+}
